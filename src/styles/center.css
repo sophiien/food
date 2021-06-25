@@ -1,0 +1,15 @@
+div.centertext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input.postal {
+  width: 80%;
+  padding: 20px;
+}
+
+/* how to make it responsive :( */
+div.start {
+  padding: 100px;
+}
