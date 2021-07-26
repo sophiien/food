@@ -1,0 +1,45 @@
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: #eeebe1;
+}
+
+.navbar-custom {
+  background: #d8a99a;
+}
+
+.navbar-item {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+/* how to change the color of the active navbar items  */
+.navbar-item > .active > a {
+  font-weight: 20px;
+  color: black;
+}
+
+.navbar-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.col-lg-3 {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.input {
+  margin: 40px;
+  text-align: center;
+}
