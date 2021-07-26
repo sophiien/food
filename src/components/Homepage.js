@@ -29,13 +29,12 @@ class Homepage extends Component {
           getLng(hawkers, i),
           "K"
         );
-        nearby.push({ name: hawkers[i], distance: dist });
+        nearby.push({ hawker: hawkers[i], distance: dist });
       }
       nearby.sort((a, b) => a.distance - b.distance);
       nearby = nearby.slice(0, 4);
 
       this.setState({ address: address.ADDRESS, nearby });
-      console.log(nearby);
     }
   };
 
@@ -47,7 +46,6 @@ class Homepage extends Component {
 
   render() {
     const { address, postalCode, nearby } = this.state;
-    console.log(nearby);
     return (
       <div className="home-page">
         <Helmet>
@@ -71,7 +69,7 @@ class Homepage extends Component {
                 className="col-lg-3
                d-flex align-items-stretch"
               >
-                <DisplayCard hawker={hawker.name} />
+                <DisplayCard hawker={hawker.hawker} />
               </div>
             ))}
         </div>

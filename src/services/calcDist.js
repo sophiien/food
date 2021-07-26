@@ -22,9 +22,9 @@ export function distance(lat1, lon1, lat2, lon2, unit) {
 }
 
 export function getLat(arr, idx) {
-  return arr[idx].lat;
+  return arr[idx]["latitude_hc"];
 }
 
 export function getLng(arr, idx) {
-  return arr[idx].lng;
+  return arr[idx]["longitude_hc"];
 }
